@@ -10,7 +10,6 @@ const campsiteRouter = require('./routes/campsiteRouter');
 const promotionRouter = require('./routes/promotionRouter');
 const partnerRouter = require('./routes/partnerRouter');
 
-
 var app = express();
 
 // view engine setup
@@ -28,7 +27,6 @@ app.use('/users', usersRouter);
 app.use('/campsites', campsiteRouter);
 app.use('/promotions', promotionRouter);
 app.use('/partners', partnerRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
